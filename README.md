@@ -1,4 +1,10 @@
 #World countries in JSON, CSV, XML and YAML.
+
+[![Downloads](https://img.shields.io/npm/dm/world-countries.svg?style=flat)](https://www.npmjs.com/package/world-countries)
+[![Latest Stable Version](https://img.shields.io/npm/v/world-countries.svg?style=flat)](https://www.npmjs.com/package/world-countries)
+[![Latest Stable Version](https://img.shields.io/packagist/v/mledoze/countries.svg?style=flat)](https://packagist.org/packages/mledoze/countries)
+[![License](https://img.shields.io/packagist/l/mledoze/countries.svg?style=flat)](http://opendatacommons.org/licenses/odbl/1.0/)
+
 ## Countries data
 This repository contains lists of world countries in JSON, CSV and XML. Each line contains the country:
 
@@ -87,8 +93,8 @@ GeoJSON outlines and flags in SVG format.
 }
 ```
 
-#####GeoJSON outline
-See an example for [Germany](https://github.com/mledoze/countries/blob/bb61a1cddfefd09ad5c92ad0a1effbfceba39930/data/deu.geo.json).
+#####GeoJSON and TopoJSON outlines
+See an example for Germany: [GeoJSON](https://github.com/mledoze/countries/blob/bb61a1cddfefd09ad5c92ad0a1effbfceba39930/data/deu.geo.json) or [TopoJSON](https://github.com/mledoze/countries/blob/442472de98e80f4a44f1028960dbb0dfb1d942fe/data/deu.topo.json).
 
 #####CSV
 ```csv
@@ -150,9 +156,10 @@ Projects using this dataset:
 - [Telephone JS](https://github.com/lukaswhite/telephones-js)
 - [Countries of the World](http://countries.petethompson.net/)
 - [Country Prefix Codes For Go](https://github.com/relops/prefixes)
-- [Ask the NSA](http://askthensa.com/)
 - [Country Info Mapper in Go](https://github.com/pirsquare/country-mapper)
 - [Visa requirements in JSON](https://github.com/herrniemand/visas)
+- [Counter picker modal for React Native](https://github.com/xcarpentier/react-native-country-picker-modal)
+- [Agnostic Virtual Assistant](https://github.com/ava-ia/core)
 
 ## How to contribute?
 Please refer to [CONTRIBUTING](https://github.com/mledoze/countries/blob/master/CONTRIBUTING.md).
@@ -160,6 +167,7 @@ Please refer to [CONTRIBUTING](https://github.com/mledoze/countries/blob/master/
 ## To do
  - add the type of the country (country, sovereign state, public body, territory, etc.)
  - add missing translations
+ - pull in data automatically from CLDR at build time (idea from @Munter, see #108) 
 
 ## Sources
 http://www.currency-iso.org/ for currency codes.
@@ -177,7 +185,7 @@ Thanks to:
  - @frederik-jacques for the capital cities
  - @fayer for the population, geolocation, demonym and area data
  - @ancosen for his help with the borders data
- - @herrniemand for country names and various fixes
+ - @herrjemand for country names and various fixes
  - all the contributors: https://github.com/mledoze/countries/graphs/contributors
 
 ## License
